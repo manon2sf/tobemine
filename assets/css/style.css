@@ -1,0 +1,384 @@
+/**
+* style.css - Global css style
+*/
+
+/* Global */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h1,
+span {
+  font-family: "Shadows Into Light", cursive;
+  font-style: italic;
+}
+
+span {
+  font-size: 2rem;
+  color: #ff0000;
+}
+
+.w100 {
+  max-width: 100%;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.bigger {
+  font-size: 1.6rem;
+}
+
+.bigger span {
+  font-size: 1.5em;
+}
+
+.smaller {
+  font-size: 0.8rem;
+}
+
+.smaller span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.black {
+  color: #000000;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-img {
+  float: left;
+  width: 160px;
+}
+
+.inline-p {
+  line-height: 45px;
+}
+
+.display {
+  display: none;
+}
+
+section {
+  margin: 60px 90px 0;
+  padding-top: 30px;
+}
+
+.img-container {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title {
+  font-size: 4rem;
+  color: #ff0000;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.highlight {
+  font-weight: bolder;
+  font-size: 2em !important;
+}
+
+.padding-t30-l40 {
+  padding: 30% 0 0 40%;
+}
+
+.navbar-nav li.active > a.nav-link {
+  color: red !important;
+}
+
+/* Navigation */
+
+a.nav-link {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+/* Header */
+
+header {
+  height: 100vh;
+}
+
+header section#home {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+header section#home div.title-container {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+}
+
+header .header-bg {
+  margin-top: 85px;
+}
+
+.header-img.left {
+  padding-right: 20%;
+}
+
+.header-img.right {
+  padding-left: 20%;
+}
+
+header .header-bg.mobile {
+  display: none;
+}
+
+.header-img-container.mobile {
+  display: none;
+}
+
+header .title-container {
+  position: relative;
+  text-align: center;
+}
+
+header .title-container img {
+  margin-left: 15%;
+  width: 60%;
+}
+
+/* Video */
+
+video {
+  box-shadow: 5px 5px 5px grey;
+  border: 1px solid grey;
+}
+
+#videoPresentation {
+  text-align: center;
+}
+
+/* section 1 */
+.section-1 {
+  padding: 15px;
+}
+
+.section-1.txt {
+  display: flex;
+  padding: 60px;
+  vertical-align: middle;
+}
+
+.section-1.txt.with-logo {
+  display: block;
+}
+
+.section-1.txt p {
+  margin: auto;
+}
+
+.section-1 .img-container img {
+  width: 450px;
+}
+
+#feelingSection .img-w80 {
+  width: 80%;
+}
+
+#feelingSection div.row:first-of-type {
+  flex-wrap: wrap-reverse;
+}
+
+#logoTobemine {
+  padding: 30px 100px 30px 0;
+}
+
+#textDNA {
+  padding-left: 150px;
+}
+
+/* section 2 */
+#sharingSection div.row:nth-of-type(3) {
+  flex-wrap: wrap-reverse;
+}
+
+/* section 3 */
+#infinitlyGreat {
+  padding-top: 60px;
+}
+
+#infinitlyGreatLogo {
+  padding: 10%;
+}
+
+/* Section 4 */
+#howDoesItWorkSection {
+  text-align: center;
+}
+
+/* Section 5 */
+#andThenSection .mobile-img {
+  display: none;
+}
+
+.display-mobile {
+  display: none;
+}
+
+/* Footer */
+footer {
+  height: 100vh;
+}
+
+#contact {
+  position: relative;
+  margin: 0;
+}
+
+footer #contact .contact {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+footer #contact .contact span,
+footer #contact .contact-mobile span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+footer #contact .contact-mobile {
+  display: none;
+}
+
+/* *
+* Media screen 
+*/
+
+@media only screen and (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+  span {
+    font-size: 20px;
+  }
+  section {
+    margin: 15px 15px 0;
+  }
+
+  h1 {
+    margin-bottom: 30px 0;
+  }
+
+  .bigger {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  header .header-bg,
+  header .title-container,
+  #andThenSection .img-container.mobile,
+  #andThenSection .desktop-img,
+  footer .contact,
+  #infinitlyGreatLogo {
+    display: none;
+  }
+
+  #andThenSection .mobile-img,
+  footer #contact .contact-mobile {
+    display: flex;
+  }
+
+  header .header-bg.mobile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .header-bg.mobile .col-12.mobile {
+    height: 33vh;
+  }
+
+  header .header-bg.mobile .col-12.mobile .reverse-img {
+    display: block;
+    margin: 0 0 0 auto;
+  }
+
+  header .header-bg.mobile .col-12.mobile .title-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  header .header-bg {
+    margin-top: 0;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .section-1.txt {
+    padding: 10px;
+  }
+
+  #infinitlyGreat {
+    padding-top: 0;
+  }
+
+  #feelingSection .img-w80 {
+    width: 100%;
+  }
+
+  #textDNA {
+    padding: 0;
+    text-align: center;
+  }
+
+  #logoTobemine {
+    padding: 0 30px;
+  }
+
+  #sharingSection div.row:first-of-type,
+  #madeOfSection div.row:nth-of-type(2) {
+    flex-wrap: wrap-reverse;
+  }
+
+  #andThenSection {
+    position: relative;
+    margin-top: 60px;
+  }
+
+  #andThenSection .title {
+    margin-bottom: 70px;
+  }
+
+  .display-mobile {
+    display: block;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    right: 0;
+  }
+
+  footer {
+    height: 50vh;
+  }
+}
