@@ -271,7 +271,7 @@ footer #contact .contact-mobile {
 * Media screen 
 */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   body {
     font-size: 14px;
   }
@@ -279,7 +279,7 @@ footer #contact .contact-mobile {
     font-size: 20px;
   }
   section {
-    margin: 15px 15px 0;
+    margin: 15px 0 0;
   }
 
   h1 {
@@ -296,7 +296,7 @@ footer #contact .contact-mobile {
 
   header .header-bg,
   header .title-container,
-  #andThenSection .img-container.mobile,
+  #andThenSection .col-sm-4.mobile,
   #andThenSection .desktop-img,
   footer .contact,
   #infinitlyGreatLogo {
@@ -313,8 +313,16 @@ footer #contact .contact-mobile {
     flex-direction: row;
   }
 
+  header .header-bg.mobile .img-container {
+    height: 100%;
+  }
+
   header .header-bg.mobile .col-12.mobile {
-    height: 33vh;
+    height: 30vh;
+  }
+
+  header .header-bg.mobile .col-12.mobile .header-mobile-img-container {
+    text-align: start;
   }
 
   header .header-bg.mobile .col-12.mobile .reverse-img {
@@ -374,7 +382,7 @@ footer #contact .contact-mobile {
     display: block;
     position: absolute;
     width: 150px;
-    top: 0;
+    top: 40px;
     right: 0;
   }
 
